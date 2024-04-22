@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        registry = "arshithpakalapati/studentsurvey_gmu"
+        registry = "kparrayb/645surveyjar"
         registryCredential = 'Docker'
-        Git_repository = ''
+        Git_repository = 'https://github.com/arshith4401/swe645hw3'
     }
     stages {
         stage('Preprocessing') {
