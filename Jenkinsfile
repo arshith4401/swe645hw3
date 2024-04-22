@@ -14,7 +14,8 @@ pipeline {
                 script {
                     env.date = new Date().format("yyyyMMdd-HHmmss")
                     git branch: 'main', url: Git_repository
-                    sh 'mvn clean package'
+                    sh 'mvn clean'
+                    sh 'mvn install'
                 }
             }
         }
