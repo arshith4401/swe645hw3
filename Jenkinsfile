@@ -3,7 +3,7 @@ pipeline {
     environment {
         registry = "kparrayb/645surveyjar"
         registryCredential = 'Docker'
-        Git_repository = 'https://github.com/arshith4401/swe645hw3'
+        Git_repository = 'https://github.com/arshith4401/swe645hw3.git'
     }
     stages {
         stage('Preprocessing') {
