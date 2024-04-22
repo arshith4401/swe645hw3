@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     env.date = new Date().format("yyyyMMdd-HHmmss")
-                    git url:Git_repository
+                    git branch: 'main', url: Git_repository
                     sh 'mvn clean package'
                 }
             }
